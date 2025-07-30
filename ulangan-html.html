@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran Siswa Baru</title>
+</head>
+<body>
+    <!-- Judul Halaman -->
+    <center>
+        <font size="6"><b>Formulir Pendaftaran Siswa Baru</b></font>
+    </center>
+
+    <!-- Gambar Logo -->
+    <br>
+    <center>
+        <img src="logo.png" alt="Logo Sekolah" width="200">
+    </center>
+
+    <!-- Paragraf Pendahuluan -->
+    <br>
+    <center>
+        <p>Silakan isi formulir di bawah ini dengan data yang benar dan lengkap.</p>
+    </center>
+
+    <hr>
+
+    <!-- Formulir Pendaftaran -->
+    <center>
+        <form action="#" method="post">
+            <fieldset>
+                <legend><b>Data Siswa</b></legend>
+                <table cellpadding="5" border="10">
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" required></td>
+                    </tr>
+                    <tr>
+                        <td>NISN</td>
+                        <td>:</td>
+                        <td><input type="number" name="nisn" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                            <input type="radio" name="jk" value="Perempuan"> Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="tgl_lahir" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>
+                            <select name="jurusan">
+                                <option value="RPL">RPL</option>
+                                <option value="TKJ">TKJ</option>
+                                <option value="MM">MM</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td><textarea name="alamat" rows="3" cols="30"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">Daftar</button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </center>
+
+    <hr>
+
+    <!-- Audio -->
+    <center>
+        <p><b>Putar audio informasi berikut:</b></p>
+        <audio controls>
+            <source src="bel.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung pemutar audio.
+        </audio>
+    </center>
+
+    <hr>
+
+    <!-- Marquee Bonus -->
+    <marquee behavior="scroll" direction="left">
+        Selamat datang di halaman pendaftaran siswa baru SMK RPL!
+    </marquee>
+
+    <!-- Tabel Bonus -->
+    <br>
+    <center>
+        <font size="4"><b>Daftar Jurusan</b></font><br><br>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr bgcolor="#add8e6">
+                <th>No</th>
+                <th>Jurusan</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>RPL</td>
+                <td>Rekayasa Perangkat Lunak</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>TKJ</td>
+                <td>Teknik Komputer dan Jaringan</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>MM</td>
+                <td>Multimedia</td>
+            </tr>
+        </table>
+    </center>
+
+</body>
+</html>
